@@ -10,6 +10,11 @@ namespace CurrencyConvert
     {
         static void Main(string[] args)
         {
+
+            Money convertedMoney = new ConvertedMoney(1, currencyType.USD, currencyType.EUR);
+            double converted = ConvertedMoney.Calculate();
+            Console.WriteLine(converted);
+                 
         }
     }
 }

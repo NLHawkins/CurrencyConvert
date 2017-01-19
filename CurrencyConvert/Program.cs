@@ -12,9 +12,12 @@ namespace CurrencyConvert
         {
 
             Money convertedMoney = new ConvertedMoney(1, currencyType.USD, currencyType.EUR);
-            double converted = ConvertedMoney.Calculate();
-            Console.WriteLine(converted);
-                 
+            double converted = convertedMoney.Calculate();
+            string convertSymbol = convertedMoney.ConvertSymbol();
+            
+            Console.WriteLine($"{convertSymbol}{converted}");
+
+
         }
     }
 }

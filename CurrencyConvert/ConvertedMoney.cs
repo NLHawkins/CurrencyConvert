@@ -15,10 +15,20 @@ namespace CurrencyConvert
 
 
         }
-
         public override double Calculate()
         {
+            convertedValue = valueToConvert * conversionFactor;
             return convertedValue;
         }
+        public override string ConvertSymbol()
+        {
+            convertedSymbol = symbol[toTypeIndex];
+            return convertedSymbol;
+        }
+
+
     }
+
+
 }
+
